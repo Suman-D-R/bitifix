@@ -4,6 +4,7 @@ import './globals.css';
 import { AppProvider } from './context/AppContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AOSInit from './components/AOSInit';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -16,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'GoPravasa - Digital Solutions & Business Growth',
+  title: 'Bitifix - Digital Solutions & Business Growth',
   description:
-    'At GoPravasa, we believe every successful project starts with understanding. Our approach is built around research, collaboration, and innovation to deliver solutions that truly connect with your audience and help your business grow.',
+    'At Bitifix, we believe every successful project starts with understanding. Our approach is built around research, collaboration, and innovation to deliver solutions that truly connect with your audience and help your business grow.',
 };
 
 export default function RootLayout({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
+        <AOSInit />
         <AppProvider>
           <Header />
 

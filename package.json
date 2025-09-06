@@ -11,6 +11,8 @@
   "dependencies": {
     "@rive-app/react-canvas": "^4.23.3",
     "@tabler/icons-react": "^3.34.1",
+    "@types/aos": "^3.0.7",
+    "aos": "^2.3.4",
     "next": "15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
