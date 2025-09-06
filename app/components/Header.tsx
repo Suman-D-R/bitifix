@@ -88,7 +88,7 @@ export default function Header(): React.ReactElement {
             </div>
 
             <button className='bg-white text-black px-4 py-2 rounded-full hidden md:block'>
-              Let's Talk
+              Let&apos;s Talk
             </button>
           </div>
         </div>

@@ -10,25 +10,6 @@ import {
   IconUsers,
   IconRefresh,
   IconStar,
-  IconBrandReact,
-  IconBrandNextjs,
-  IconBrandVue,
-  IconBrandAngular,
-  IconBrandTypescript,
-  IconBrandTailwind,
-  IconBrandNodejs,
-  IconBrandPython,
-  IconBrandDjango,
-  IconBrandLaravel,
-  IconBrandMongodb,
-  IconBrandMysql,
-  IconBrandAws,
-  IconBrandDocker,
-  IconBrandReactNative,
-  IconBrandFlutter,
-  IconBrandSwift,
-  IconBrandKotlin,
-  IconBrandXamarin,
 } from '@tabler/icons-react';
 
 export default function Home() {
@@ -220,8 +201,8 @@ export default function Home() {
                 Continuous Improvement
               </h3>
               <p className='text-gray-300 text-sm sm:text-base'>
-                We don't stop at delivery; we analyze performance and refine
-                solutions for lasting success.
+                We don&apos;t stop at delivery; we analyze performance and
+                refine solutions for lasting success.
               </p>
             </div>
           </div>
@@ -311,8 +292,9 @@ export default function Home() {
                 24/7 Support
               </h3>
               <p className='text-gray-300 leading-relaxed text-sm sm:text-base'>
-                Our commitment doesn't end at launch. We provide ongoing support
-                and maintenance to keep your digital solutions running smoothly.
+                Our commitment doesn&apos;t end at launch. We provide ongoing
+                support and maintenance to keep your digital solutions running
+                smoothly.
               </p>
             </div>
 
@@ -341,8 +323,8 @@ export default function Home() {
               What Our Clients Say
             </h2>
             <p className='text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl mx-auto'>
-              Don't just take our word for it. Here's what our satisfied clients
-              have to say about working with us.
+              Don&apos;t just take our word for it. Here&apos;s what our
+              satisfied clients have to say about working with us.
             </p>
           </div>
 
@@ -358,10 +340,10 @@ export default function Home() {
                 ))}
               </div>
               <p className='text-gray-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base'>
-                "Bitifix transformed our online presence completely. Their
+                &quot;Bitifix transformed our online presence completely. Their
                 technical expertise and attention to detail exceeded our
                 expectations. The website they built for us has significantly
-                increased our customer engagement."
+                increased our customer engagement.&quot;
               </p>
               <div className='flex items-center'>
                 <div className='w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-full flex items-center justify-center mr-3 sm:mr-4'>
@@ -391,9 +373,9 @@ export default function Home() {
                 ))}
               </div>
               <p className='text-gray-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base'>
-                "Working with Bitifix was a game-changer for our business. They
-                delivered a mobile app that our users love, and their ongoing
-                support has been exceptional. Highly recommended!"
+                &quot;Working with Bitifix was a game-changer for our business.
+                They delivered a mobile app that our users love, and their
+                ongoing support has been exceptional. Highly recommended!&quot;
               </p>
               <div className='flex items-center'>
                 <div className='w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-full flex items-center justify-center mr-3 sm:mr-4'>
@@ -423,9 +405,10 @@ export default function Home() {
                 ))}
               </div>
               <p className='text-gray-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base'>
-                "The team at Bitifix understood our vision perfectly and brought
-                it to life. Their creative approach and technical skills helped
-                us stand out in a competitive market. Truly professional!"
+                &quot;The team at Bitifix understood our vision perfectly and
+                brought it to life. Their creative approach and technical skills
+                helped us stand out in a competitive market. Truly
+                professional!&quot;
               </p>
               <div className='flex items-center'>
                 <div className='w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-full flex items-center justify-center mr-3 sm:mr-4'>
@@ -487,8 +470,8 @@ export default function Home() {
               Ready to Get Started?
             </h3>
             <p className='text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base'>
-              Let's discuss how we can help bring your vision to life with our
-              expertise and dedication to excellence.
+              Let&apos;s discuss how we can help bring your vision to life with
+              our expertise and dedication to excellence.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
               <button className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600'>

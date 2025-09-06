@@ -4,7 +4,6 @@ import './globals.css';
 import { AppProvider } from './context/AppContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import VantaScript from './components/VantaScript';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

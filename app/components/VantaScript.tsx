@@ -4,7 +4,19 @@ import { useEffect } from 'react';
 
 declare global {
   interface Window {
-    VANTA: any;
+    VANTA: {
+      CELLS: (options: {
+        el: string;
+        mouseControls: boolean;
+        touchControls: boolean;
+        gyroControls: boolean;
+        minHeight: number;
+        minWidth: number;
+        scale: number;
+        color1: number;
+        color2: number;
+      }) => void;
+    };
   }
 }
 
@@ -65,7 +77,7 @@ export default function VantaScript({ targetElementId }: VantaScriptProps) {
       );
       scripts.forEach((script) => script.remove());
     };
-  }, []);
+  }, [targetElementId]);
 
   return null; // This component doesn't render anything
 }

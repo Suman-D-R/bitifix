@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, ReactNode } from 'react';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface AppContextType {
   // Add other context properties here as needed
 }
