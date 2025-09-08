@@ -141,7 +141,7 @@ export default function Home() {
       <section id='approach' className='py-20'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='text-center mb-12 sm:mb-16'>
-            <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4'>
+            <h2 className='text-2xl lg:text-4xl font-bold mb-3 sm:mb-4'>
               Our Approach
             </h2>
             <p className='text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl mx-auto'>
@@ -217,7 +217,7 @@ export default function Home() {
       <section id='strengths' className='py-20'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='text-center mb-12 sm:mb-16'>
-            <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4'>
+            <h2 className='text-2xl lg:text-4xl font-bold mb-3 sm:mb-4'>
               Why Choose Us
             </h2>
             <p className='text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl mx-auto'>
@@ -228,8 +228,8 @@ export default function Home() {
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {/* Technical Excellence */}
-            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg  hover:border-orange-500/50 transition-all duration-300'>
-              <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
+            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg   transition-all duration-300'>
+              <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconCode className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
               <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4'>
@@ -243,8 +243,8 @@ export default function Home() {
             </div>
 
             {/* Client-Focused Approach */}
-            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg  hover:border-orange-500/50 transition-all duration-300'>
-              <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
+            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg   transition-all duration-300'>
+              <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconHeart className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
               <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4'>
@@ -258,8 +258,8 @@ export default function Home() {
             </div>
 
             {/* Proven Track Record */}
-            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg  hover:border-orange-500/50 transition-all duration-300'>
-              <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
+            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg   transition-all duration-300'>
+              <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconShield className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
               <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4'>
@@ -273,8 +273,8 @@ export default function Home() {
             </div>
 
             {/* Agile Development */}
-            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg  hover:border-orange-500/50 transition-all duration-300'>
-              <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
+            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg   transition-all duration-300'>
+              <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconRocket className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
               <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4'>
@@ -288,8 +288,8 @@ export default function Home() {
             </div>
 
             {/* 24/7 Support */}
-            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg  hover:border-orange-500/50 transition-all duration-300'>
-              <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
+            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg   transition-all duration-300'>
+              <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconRefresh className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
               <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4'>
@@ -303,8 +303,8 @@ export default function Home() {
             </div>
 
             {/* Cost-Effective Solutions */}
-            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg  hover:border-orange-500/50 transition-all duration-300'>
-              <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
+            <div className='text-center p-4 sm:p-6 md:p-8 rounded-lg   transition-all duration-300'>
+              <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconShield className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
               <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4'>
@@ -323,7 +323,7 @@ export default function Home() {
       <section id='testimonials' className='py-20'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='text-center mb-12 sm:mb-16'>
-            <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4'>
+            <h2 className='text-2xl lg:text-4xl font-bold mb-3 sm:mb-4'>
               What Our Clients Say
             </h2>
             <p className='text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl mx-auto'>
@@ -334,7 +334,7 @@ export default function Home() {
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {/* Testimonial 1 */}
-            <div className=' border border-slate-800 rounded-xl p-4 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all duration-300'>
+            <div className=' border border-white/10 rounded-xl p-4 sm:p-6 md:p-8  transition-all duration-300'>
               <div className='flex items-center mb-3 sm:mb-4'>
                 {[...Array(5)].map((_, i) => (
                   <IconStar
@@ -367,7 +367,7 @@ export default function Home() {
             </div>
 
             {/* Testimonial 2 */}
-            <div className=' border border-slate-800 rounded-xl p-4 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all duration-300'>
+            <div className=' border border-white/10  rounded-xl p-4 sm:p-6 md:p-8  transition-all duration-300'>
               <div className='flex items-center mb-3 sm:mb-4'>
                 {[...Array(5)].map((_, i) => (
                   <IconStar
@@ -399,7 +399,7 @@ export default function Home() {
             </div>
 
             {/* Testimonial 3 */}
-            <div className=' border border-slate-800 rounded-xl p-4 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all duration-300'>
+            <div className=' border border-white/10  rounded-xl p-4 sm:p-6 md:p-8  transition-all duration-300'>
               <div className='flex items-center mb-3 sm:mb-4'>
                 {[...Array(5)].map((_, i) => (
                   <IconStar
@@ -470,14 +470,14 @@ export default function Home() {
 
           {/* Call to Action */}
           <div className='text-center mt-12 sm:mt-16'>
-            <h3 className='text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4'>
+            <h3 className='text-2xl md:text-3xl font-bold mb-3 sm:mb-4'>
               Ready to Get Started?
             </h3>
             <p className='text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base'>
               Let&apos;s discuss how we can help bring your vision to life with
               our expertise and dedication to excellence.
             </p>
-            <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+            <div className='flex  gap-4 justify-center'>
               <button className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600'>
                 Start Your Project
               </button>
