@@ -1,10 +1,8 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import {
   IconUsers,
-  IconRocket,
   IconTarget,
   IconHeart,
   IconCode,
@@ -58,8 +56,8 @@ export default function About() {
               </p>
               <p className='text-gray-300 text-base sm:text-lg leading-relaxed'>
                 From startups looking to make their mark to established
-                enterprises seeking digital innovation, we've helped countless
-                businesses achieve their digital ambitions.
+                enterprises seeking digital innovation, we&apos;ve helped
+                countless businesses achieve their digital ambitions.
               </p>
             </div>
             <div className='relative order-1 lg:order-2'>
@@ -80,13 +78,13 @@ export default function About() {
             </h2>
             <p className='text-gray-300 text-base sm:text-lg max-w-3xl mx-auto px-2 sm:px-0'>
               Driving digital excellence through innovation, collaboration, and
-              unwavering commitment to our clients' success.
+              unwavering commitment to our clients&apos; success.
             </p>
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12'>
             {/* Mission */}
-            <div className='text-center p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-6 sm:p-8 rounded-2xl   transition-all duration-300'>
               <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconTarget className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
@@ -101,7 +99,7 @@ export default function About() {
             </div>
 
             {/* Vision */}
-            <div className='text-center p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-6 sm:p-8 rounded-2xl   transition-all duration-300'>
               <div className='w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6'>
                 <IconBulb className='w-8 h-8 sm:w-10 sm:h-10 text-white' />
               </div>
@@ -133,7 +131,7 @@ export default function About() {
 
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8'>
             {/* Innovation */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconCode className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -147,7 +145,7 @@ export default function About() {
             </div>
 
             {/* Quality */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconAward className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -161,7 +159,7 @@ export default function About() {
             </div>
 
             {/* Collaboration */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconUsersGroup className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -175,7 +173,7 @@ export default function About() {
             </div>
 
             {/* Integrity */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconShield className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -189,7 +187,7 @@ export default function About() {
             </div>
 
             {/* Passion */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconHeart className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -203,7 +201,7 @@ export default function About() {
             </div>
 
             {/* Excellence */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconStar className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -227,40 +225,40 @@ export default function About() {
               Meet Our Team
             </h2>
             <p className='text-gray-300 text-base sm:text-lg max-w-3xl mx-auto px-2 sm:px-0'>
-              The talented individuals behind Bitifix's success, bringing
+              The talented individuals behind Bitifix&apos;s success, bringing
               together diverse skills and shared passion for digital innovation.
             </p>
           </div>
 
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8'>
             {/* Team Member 1 */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <span className='text-white font-bold text-xl sm:text-2xl'>
-                  SM
+                  SD
                 </span>
               </div>
               <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                Sarah Mitchell
+                Suman Devanga Rangaswamy
               </h3>
               <p className='text-orange-500 mb-2 sm:mb-3 text-sm sm:text-base'>
                 CEO & Founder
               </p>
               <p className='text-gray-300 text-xs sm:text-sm'>
-                Visionary leader with 10+ years in tech, passionate about
+                Visionary leader with 5+ years in tech, passionate about
                 transforming businesses through innovation.
               </p>
             </div>
 
             {/* Team Member 2 */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <span className='text-white font-bold text-xl sm:text-2xl'>
-                  DJ
+                  SS
                 </span>
               </div>
               <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                David Johnson
+                Sahil Shingte
               </h3>
               <p className='text-orange-500 mb-2 sm:mb-3 text-sm sm:text-base'>
                 Lead Developer
@@ -272,15 +270,13 @@ export default function About() {
             </div>
 
             {/* Team Member 3 */}
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <span className='text-white font-bold text-xl sm:text-2xl'>
-                  EW
+                  DM
                 </span>
               </div>
-              <h3 className='text-lg sm:text-xl font-bold mb-2'>
-                Emily Wilson
-              </h3>
+              <h3 className='text-lg sm:text-xl font-bold mb-2'>Dhanush M C</h3>
               <p className='text-orange-500 mb-2 sm:mb-3 text-sm sm:text-base'>
                 UI/UX Designer
               </p>
@@ -307,7 +303,7 @@ export default function About() {
           </div>
 
           <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8'>
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800'>
+            <div className='text-center p-4 sm:p-6 rounded-xl '>
               <div className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-orange-500 mb-1 sm:mb-2'>
                 10+
               </div>
@@ -316,7 +312,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800'>
+            <div className='text-center p-4 sm:p-6 rounded-xl '>
               <div className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-orange-500 mb-1 sm:mb-2'>
                 5+
               </div>
@@ -325,7 +321,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800'>
+            <div className='text-center p-4 sm:p-6 rounded-xl '>
               <div className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-orange-500 mb-1 sm:mb-2'>
                 2+
               </div>
@@ -334,7 +330,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800'>
+            <div className='text-center p-4 sm:p-6 rounded-xl '>
               <div className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-orange-500 mb-1 sm:mb-2'>
                 100%
               </div>
@@ -360,7 +356,7 @@ export default function About() {
           </div>
 
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8'>
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconTrendingUp className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -373,7 +369,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconClock className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -386,7 +382,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className='text-center p-4 sm:p-6 rounded-xl border border-slate-800 hover:border-orange-500/50 transition-all duration-300 sm:col-span-2 lg:col-span-1'>
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300 sm:col-span-2 lg:col-span-1'>
               <div className='w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
                 <IconUsers className='w-7 h-7 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -394,7 +390,7 @@ export default function About() {
                 Dedicated Support
               </h3>
               <p className='text-gray-300 text-sm sm:text-base'>
-                Our relationship doesn't end at launch. We provide ongoing
+                Our relationship doesn&apos;t end at launch. We provide ongoing
                 support and maintenance for all our projects.
               </p>
             </div>
@@ -409,10 +405,10 @@ export default function About() {
             Ready to Work With Us?
           </h2>
           <p className='text-gray-300 text-base sm:text-lg mb-6 sm:mb-8 max-w-3xl mx-auto px-2 sm:px-0'>
-            Let's discuss how we can help bring your vision to life with our
-            expertise, passion, and commitment to excellence.
+            Let&apos;s discuss how we can help bring your vision to life with
+            our expertise, passion, and commitment to excellence.
           </p>
-          <div className='flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto'>
+          <div className='flex gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto'>
             <button className='bg-orange-500 text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-semibold transition-colors hover:bg-orange-600 w-full sm:w-auto'>
               Start Your Project
             </button>

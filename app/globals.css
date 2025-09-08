@@ -9,3 +9,204 @@ body{
   background-color: #111;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Blog content styling */
+.prose {
+  color: #e5e7eb;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive heading sizes */
+.prose h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.prose h3 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.prose h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.prose h5 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.prose h6 {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.prose strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.prose a {
+  color: #f97316;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #ea580c;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 640px) {
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .prose h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .prose h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .prose h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .prose h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .prose h6 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .prose p {
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1024px) {
+  .prose h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .prose h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .prose h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .prose h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .prose h5 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .prose h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .prose p {
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+    font-size: 1.125rem;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.75rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
+    font-size: 1.125rem;
+  }
+}
+

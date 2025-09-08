@@ -21,8 +21,7 @@ export default function Home() {
       <section
         style={{
           background: 'radial-gradient(circle, #222 0%, #000 100%)',
-          maskImage:
-            'linear-gradient(black,black,black,black,black,transparent)',
+          maskImage: 'linear-gradient(black,black,black,transparent)',
         }}
         id='home'
         className='relative overflow-hidden h-svh flex items-center justify-center'
@@ -99,9 +98,12 @@ export default function Home() {
                   Scalability – Building solutions that grow with your business
                 </li>
               </ul>
-              <button className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600 w-fit'>
+              <a
+                href='/services#web-development'
+                className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600 w-fit inline-block'
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
 
@@ -124,9 +126,12 @@ export default function Home() {
                 <li>User-focused design with smooth, intuitive experiences</li>
                 <li>Optimized for performance, security, and future growth</li>
               </ul>
-              <button className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600 w-fit'>
+              <a
+                href='/services#app-development'
+                className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600 w-fit inline-block'
+              >
                 Learn More
-              </button>
+              </a>
             </div>
             <div>
               <div className='w-full h-[200px] md:h-[400px] rounded-lg overflow-hidden pointer-events-none'>

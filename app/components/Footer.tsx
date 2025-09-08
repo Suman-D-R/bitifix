@@ -85,7 +85,7 @@ export default function Footer(): React.ReactElement {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='bg-black border-t border-slate-800 text-white'>
+    <footer className=' border-t border-white/10 text-white'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         {/* Main Footer Content */}
         <div className='py-12 sm:py-16 lg:py-20'>
@@ -115,7 +115,7 @@ export default function Footer(): React.ReactElement {
                     href='mailto:hello@bitifix.com'
                     className='hover:text-orange-500 transition-colors'
                   >
-                    hello@bitifix.com
+                    info@bitifix.com
                   </a>
                 </div>
                 <div className='flex items-center gap-3 text-gray-300 text-sm sm:text-base'>
@@ -124,12 +124,15 @@ export default function Footer(): React.ReactElement {
                     href='tel:+1234567890'
                     className='hover:text-orange-500 transition-colors'
                   >
-                    +1 (234) 567-890
+                    +91 9902696211
                   </a>
                 </div>
                 <div className='flex items-start gap-3 text-gray-300 text-sm sm:text-base'>
                   <IconMapPin className='w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0 mt-0.5' />
-                  <span>123 Tech Street, Digital City, DC 12345</span>
+                  <span>
+                    2nd Cross, 1st Main, Sector 1, HSR Layout, Bangalore,
+                    Karnataka, India
+                  </span>
                 </div>
               </div>
             </div>
@@ -193,7 +196,7 @@ export default function Footer(): React.ReactElement {
           </div>
 
           {/* Social Links */}
-          <div className='mt-8 sm:mt-12 pt-8 sm:pt-12 border-t border-slate-800'>
+          <div className='mt-8 sm:mt-12 pt-8 sm:pt-12 border-t border-white/10'>
             <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6'>
               <div>
                 <h3 className='text-lg sm:text-xl font-bold mb-3 sm:mb-4'>
@@ -208,7 +211,7 @@ export default function Footer(): React.ReactElement {
                         href={social.href}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='w-10 h-10 sm:w-12 sm:h-12 bg-slate-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors group'
+                        className='w-10 h-10 sm:w-12 sm:h-12 bg-white/5 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors group'
                         aria-label={social.label}
                       >
                         <IconComponent className='w-5 h-5 sm:w-6 sm:h-6 text-gray-300 group-hover:text-white' />
@@ -223,11 +226,11 @@ export default function Footer(): React.ReactElement {
                 <h3 className='text-lg sm:text-xl font-bold mb-3 sm:mb-4'>
                   Stay Updated
                 </h3>
-                <div className='flex flex-col sm:flex-row gap-2 sm:gap-3'>
+                <div className='flex gap-2 sm:gap-3'>
                   <input
                     type='email'
                     placeholder='Enter your email'
-                    className='flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-slate-800 border border-slate-700 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors text-sm sm:text-base'
+                    className='flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-white/5 border border-white/10 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors text-sm sm:text-base'
                   />
                   <button className='bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold transition-colors text-sm sm:text-base whitespace-nowrap'>
                     Subscribe
