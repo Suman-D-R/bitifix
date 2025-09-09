@@ -12,8 +12,10 @@ import {
   IconArrowRight,
 } from '@tabler/icons-react';
 import { handleHashScroll } from '../utils/scrollUtils';
+import { useRouter } from 'next/navigation';
 
 export default function Services() {
+  const router = useRouter();
   useEffect(() => {
     // Handle smooth scrolling when the page loads with a hash
     handleHashScroll();
@@ -289,7 +291,7 @@ export default function Services() {
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {/* UI/UX Design */}
-            <div className='text-center p-6 rounded-lg  transition-all duration-300 hover:bg-gray-800/50'>
+            <div className='text-center p-6 rounded-lg  transition-all duration-300 '>
               <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                 <IconUsers className='w-6 h-6 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -303,7 +305,7 @@ export default function Services() {
             </div>
 
             {/* Digital Marketing */}
-            <div className='text-center p-6 rounded-lg  transition-all duration-300 hover:bg-gray-800/50'>
+            <div className='text-center p-6 rounded-lg  transition-all duration-300 '>
               <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                 <IconRocket className='w-6 h-6 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -317,7 +319,7 @@ export default function Services() {
             </div>
 
             {/* Maintenance & Support */}
-            <div className='text-center p-6 rounded-lg  transition-all duration-300 hover:bg-gray-800/50'>
+            <div className='text-center p-6 rounded-lg  transition-all duration-300 '>
               <div className='w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                 <IconRefresh className='w-6 h-6 sm:w-8 sm:h-8 text-white' />
               </div>
@@ -345,13 +347,16 @@ export default function Services() {
               that drives your business forward.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-              <button className='bg-orange-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600 flex items-center justify-center space-x-2'>
+              <button
+                onClick={() => router.push('/contact')}
+                className='bg-orange-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600 flex items-center justify-center space-x-2'
+              >
                 <span>Start Your Project</span>
                 <IconArrowRight className='w-4 h-4' />
               </button>
-              <button className='bg-transparent border-2 border-orange-500 text-orange-500 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-500 hover:text-white'>
+              {/* <button className='bg-transparent border-2 border-orange-500 text-orange-500 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-500 hover:text-white'>
                 Schedule a Consultation
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

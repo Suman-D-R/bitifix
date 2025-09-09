@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Conclusion</h2>
       <p>Staying ahead in web development requires continuous learning and adaptation. By embracing these trends and technologies, developers can create websites that are not only visually appealing but also performant, accessible, and future-proof.</p>
     `,
-    author: 'Sarah Mitchell',
+    author: 'Suman Devanga Rangaswamy',
     date: '2025-11-09',
     readTime: '5 min read',
     category: 'Web Development',
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Business Impact</h2>
       <p>Well-built React Native apps can drive significant business growth through improved user engagement, reduced development costs, and faster time-to-market. Companies that invest in quality mobile applications see increased customer satisfaction and revenue growth.</p>
     `,
-    author: 'David Johnson',
+    author: 'Dhanush Patel',
     date: '2025-11-09',
     readTime: '8 min read',
     category: 'Mobile App Development',
@@ -155,7 +155,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Measuring Success</h2>
       <p>Design success is measured through user behavior and business metrics. Key performance indicators include user engagement rates, conversion rates, task completion rates, and user satisfaction scores.</p>
     `,
-    author: 'Emily Wilson',
+    author: 'Raghav Singh',
     date: '2025-11-09',
     readTime: '6 min read',
     category: 'UI/UX Design',
@@ -207,7 +207,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Monitoring and Maintenance</h2>
       <p>Continuous monitoring ensures optimal performance over time. Tools like Google PageSpeed Insights, GTmetrix, and real user monitoring help identify and resolve performance issues before they impact users.</p>
     `,
-    author: 'Sarah Mitchell',
+    author: 'Suman Sharma',
     date: '2025-11-09',
     readTime: '10 min read',
     category: 'Performance Optimization',
@@ -263,7 +263,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Future Outlook</h2>
       <p>As AI technology continues to evolve, we can expect even more sophisticated tools and capabilities that will further revolutionize the development process and enable businesses to create smarter, more efficient applications.</p>
     `,
-    author: 'David Johnson',
+    author: 'Dhanush Patel',
     date: '2025-11-09',
     readTime: '7 min read',
     category: 'Technology & AI',
@@ -328,7 +328,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Best Practices Summary</h2>
       <p>Implementing comprehensive cybersecurity measures protects your business reputation, ensures regulatory compliance, and builds trust with your users. Regular security assessments and updates are crucial for maintaining a secure digital environment.</p>
     `,
-    author: 'Emily Wilson',
+    author: 'Raghav Singh',
     date: '2025-11-09',
     readTime: '9 min read',
     category: 'Cybersecurity',

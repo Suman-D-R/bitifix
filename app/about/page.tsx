@@ -15,8 +15,10 @@ import {
   IconClock,
 } from '@tabler/icons-react';
 import Rive from '@rive-app/react-canvas';
+import { useRouter } from 'next/navigation';
 
 export default function About() {
+  const router = useRouter();
   return (
     <div className='h-full text-white pt-16'>
       {/* Hero Section */}
@@ -409,12 +411,15 @@ export default function About() {
             our expertise, passion, and commitment to excellence.
           </p>
           <div className='flex gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto'>
-            <button className='bg-orange-500 text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-semibold transition-colors hover:bg-orange-600 w-full sm:w-auto'>
+            <button
+              onClick={() => router.push('/contact')}
+              className='bg-orange-500 text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-semibold transition-colors hover:bg-orange-600 w-full sm:w-auto'
+            >
               Start Your Project
             </button>
-            <button className='bg-transparent border-2 border-orange-500 text-orange-500 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-semibold transition-colors hover:bg-orange-500 hover:text-white w-full sm:w-auto'>
+            {/* <button className='bg-transparent border-2 border-orange-500 text-orange-500 px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-semibold transition-colors hover:bg-orange-500 hover:text-white w-full sm:w-auto'>
               View Our Portfolio
-            </button>
+            </button> */}
           </div>
         </div>
       </section>

@@ -39,12 +39,18 @@ export default function Home() {
               We design and develop digital solutions that move with your ideas.
             </p>
             <div className='flex  gap-4 justify-center'>
-              <button className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full max-w-fit text-sm sm:text-base md:text-lg font-semibold transition-colors'>
+              <a
+                href='/contact'
+                className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full max-w-fit text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600'
+              >
                 Get Started
-              </button>
-              <button className='bg-white text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors'>
+              </a>
+              <a
+                href='/contact'
+                className='bg-white text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-gray-100'
+              >
                 Contact Us
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -483,12 +489,18 @@ export default function Home() {
               our expertise and dedication to excellence.
             </p>
             <div className='flex  gap-4 justify-center'>
-              <button className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600'>
+              <a
+                href='/contact'
+                className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600'
+              >
                 Start Your Project
-              </button>
-              <button className='bg-transparent border-2 border-orange-500 text-orange-500 px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-500 hover:text-white'>
+              </a>
+              {/* <a
+                href='/portfolio'
+                className='bg-transparent border-2 border-orange-500 text-orange-500 px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-500 hover:text-white'
+              >
                 View Our Portfolio
-              </button>
+              </a> */}
             </div>
           </div>
         </div>

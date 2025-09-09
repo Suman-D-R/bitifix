@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { IconMenu2, IconX } from '@tabler/icons-react';
+import { useRouter } from 'next/navigation';
 
 interface NavLink {
   href: string;
@@ -14,8 +15,6 @@ interface NavLink {
 const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/pricing', label: 'Pricing' },
   { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' },
 ];
@@ -23,7 +22,7 @@ const navLinks: NavLink[] = [
 export default function Header(): React.ReactElement {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
+  const router = useRouter();
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -44,7 +43,7 @@ export default function Header(): React.ReactElement {
   return (
     <>
       <header
-        className='fixed top-0 left-0 right-0 z-10  backdrop-blur-sm text-white'
+        className='fixed top-0 left-0 right-0 z-10  backdrop-blur-sm  text-white'
         ref={menuRef}
       >
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -87,7 +86,10 @@ export default function Header(): React.ReactElement {
               </button>
             </div>
 
-            <button className='bg-white text-black px-4 py-2 rounded-full hidden md:block'>
+            <button
+              onClick={() => router.push('/contact')}
+              className='bg-white text-black px-4 py-2 rounded-full hidden md:block'
+            >
               Let&apos;s Talk
             </button>
           </div>

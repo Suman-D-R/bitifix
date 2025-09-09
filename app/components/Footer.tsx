@@ -4,11 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
-  IconBrandFacebook,
   IconBrandTwitter,
   IconBrandLinkedin,
   IconBrandInstagram,
-  IconBrandGithub,
   IconMail,
   IconPhone,
   IconMapPin,
@@ -28,56 +26,43 @@ interface SocialLink {
 
 const footerLinks = {
   services: [
-    { href: '/web-development', label: 'Web Development' },
-    { href: '/app-development', label: 'App Development' },
-    { href: '/ui-ux-design', label: 'UI/UX Design' },
-    { href: '/consulting', label: 'Consulting' },
+    { href: '/contact', label: 'Web Development' },
+    { href: '/contact', label: 'App Development' },
+    { href: '/contact', label: 'UI/UX Design' },
+    { href: '/contact', label: 'Consulting' },
   ],
   company: [
     { href: '/about', label: 'About Us' },
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/careers', label: 'Careers' },
+    // { href: '/careers', label: 'Careers' },
     { href: '/contact', label: 'Contact' },
   ],
   resources: [
     { href: '/blog', label: 'Blog' },
-    { href: '/case-studies', label: 'Case Studies' },
-    { href: '/documentation', label: 'Documentation' },
-    { href: '/support', label: 'Support' },
+    { href: '/contact', label: 'Support' },
   ],
   legal: [
     { href: '/privacy-policy', label: 'Privacy Policy' },
     { href: '/terms-of-service', label: 'Terms of Service' },
-    { href: '/cookie-policy', label: 'Cookie Policy' },
-    { href: '/gdpr', label: 'GDPR' },
+    // { href: '/cookie-policy', label: 'Cookie Policy' },
+    // { href: '/gdpr', label: 'GDPR' },
   ],
 };
 
 const socialLinks: SocialLink[] = [
-  {
-    href: 'https://facebook.com',
-    icon: IconBrandFacebook,
-    label: 'Facebook',
-  },
   {
     href: 'https://twitter.com',
     icon: IconBrandTwitter,
     label: 'Twitter',
   },
   {
-    href: 'https://linkedin.com',
+    href: 'https://linkedin.com/company/bitifix',
     icon: IconBrandLinkedin,
     label: 'LinkedIn',
   },
   {
-    href: 'https://instagram.com',
+    href: 'https://instagram.com/bitifixofficial',
     icon: IconBrandInstagram,
     label: 'Instagram',
-  },
-  {
-    href: 'https://github.com',
-    icon: IconBrandGithub,
-    label: 'GitHub',
   },
 ];
 
@@ -143,8 +128,8 @@ export default function Footer(): React.ReactElement {
                 Services
               </h3>
               <ul className='space-y-2 sm:space-y-3'>
-                {footerLinks.services.map((link: FooterLink) => (
-                  <li key={link.href}>
+                {footerLinks.services.map((link: FooterLink, index: number) => (
+                  <li key={`services-${index}`}>
                     <Link
                       href={link.href}
                       className='text-gray-300 hover:text-orange-500 transition-colors text-sm sm:text-base'
@@ -162,8 +147,8 @@ export default function Footer(): React.ReactElement {
                 Company
               </h3>
               <ul className='space-y-2 sm:space-y-3'>
-                {footerLinks.company.map((link: FooterLink) => (
-                  <li key={link.href}>
+                {footerLinks.company.map((link: FooterLink, index: number) => (
+                  <li key={`company-${index}`}>
                     <Link
                       href={link.href}
                       className='text-gray-300 hover:text-orange-500 transition-colors text-sm sm:text-base'
@@ -181,16 +166,18 @@ export default function Footer(): React.ReactElement {
                 Resources
               </h3>
               <ul className='space-y-2 sm:space-y-3'>
-                {footerLinks.resources.map((link: FooterLink) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className='text-gray-300 hover:text-orange-500 transition-colors text-sm sm:text-base'
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
+                {footerLinks.resources.map(
+                  (link: FooterLink, index: number) => (
+                    <li key={`resources-${index}`}>
+                      <Link
+                        href={link.href}
+                        className='text-gray-300 hover:text-orange-500 transition-colors text-sm sm:text-base'
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           </div>

@@ -103,7 +103,7 @@ export default function BlogPost() {
             <div className='absolute inset-0 flex items-center justify-center'>
               <div className='text-center'>
                 {/* <IconTag className='w-16 h-16 text-orange-500 mx-auto mb-4' /> */}
-                <span className=' font-semibold text-lg'>
+                <span className=' font-semibold text-lg lg:text-4xl'>
                   {currentPost.category}
                 </span>
               </div>
