@@ -5,6 +5,7 @@ import { AppProvider } from './context/AppContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AOSInit from './components/AOSInit';
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
+        <GoogleAnalytics />
         <AOSInit />
         <AppProvider>
           <Header />
