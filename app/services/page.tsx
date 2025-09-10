@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import Rive from '@rive-app/react-canvas';
+import RiveComponent from '../components/RiveComponent';
 import {
   IconCode,
   IconDeviceMobile,
@@ -49,7 +49,7 @@ export default function Services() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20'>
             <div className='order-2 lg:order-1'>
               <div className='w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden'>
-                <Rive src='/rive/web.riv' stateMachines='State Machine 1' />
+                <RiveComponent src='web' />
               </div>
             </div>
             <div className='order-1 lg:order-2 flex flex-col justify-center'>
@@ -224,7 +224,7 @@ export default function Services() {
             </div>
             <div>
               <div className='w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden'>
-                <Rive src='/rive/app.riv' stateMachines='State Machine 1' />
+                <RiveComponent src='app' />
               </div>
             </div>
           </div>
@@ -287,7 +287,7 @@ export default function Services() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20'>
             <div className='order-2 lg:order-1'>
               <div className='w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden'>
-                <Rive src='/rive/server.riv' stateMachines='State Machine 1' />
+                <RiveComponent src='server' />
               </div>
             </div>
             <div className='order-1 lg:order-2 flex flex-col justify-center'>

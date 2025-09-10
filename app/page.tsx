@@ -1,7 +1,7 @@
 'use client';
 
 import VantaScript from './components/VantaScript';
-import Rive from '@rive-app/react-canvas';
+import RiveComponent from './components/RiveComponent';
 import {
   IconCode,
   IconHeart,
@@ -72,7 +72,7 @@ export default function Home() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20'>
             <div className='order-2 lg:order-1'>
               <div className='w-full h-[200px] md:h-[400px] rounded-lg overflow-hidden'>
-                <Rive src='/rive/web.riv' stateMachines='State Machine 1' />
+                <RiveComponent src='web' />
               </div>
             </div>
             <div className='order-1 lg:order-2 flex flex-col justify-center'>
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
             <div>
               <div className='w-full h-[200px] md:h-[400px] rounded-lg overflow-hidden pointer-events-none'>
-                <Rive src='/rive/app.riv' stateMachines='State Machine 1' />
+                <RiveComponent src='app' />
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function Home() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20'>
             <div className='order-2 lg:order-1'>
               <div className='w-full h-[200px] md:h-[400px] rounded-lg overflow-hidden'>
-                <Rive src='/rive/server.riv' stateMachines='State Machine 1' />
+                <RiveComponent src='server' />
               </div>
             </div>
             <div className='order-1 lg:order-2 flex flex-col justify-center'>
@@ -210,7 +210,7 @@ export default function Home() {
             </p>
           </div>
           <div className='w-full h-[200px] md:h-[400px] mb-16 rounded-lg overflow-hidden'>
-            <Rive src='/rive/approach.riv' stateMachines='State Machine 1' />
+            <RiveComponent src='approach' />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
             {/* Research & Analysis */}

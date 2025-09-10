@@ -14,8 +14,8 @@ import {
   IconUsersGroup,
   IconClock,
 } from '@tabler/icons-react';
-import Rive from '@rive-app/react-canvas';
 import { useRouter } from 'next/navigation';
+import RiveComponent from '../components/RiveComponent';
 
 export default function About() {
   const router = useRouter();
@@ -64,7 +64,7 @@ export default function About() {
             </div>
             <div className='relative order-1 lg:order-2'>
               <div className='w-full h-64 sm:h-80 lg:h-96 rounded-2xl flex items-center justify-center'>
-                <Rive src='/rive/about.riv' stateMachines='State Machine 1' />
+                <RiveComponent src='about' />
               </div>
             </div>
           </div>
