@@ -12,8 +12,11 @@
     "@rive-app/react-canvas": "^4.23.3",
     "@tabler/icons-react": "^3.34.1",
     "@types/aos": "^3.0.7",
+    "@types/nodemailer": "^7.0.1",
     "aos": "^2.3.4",
+    "axios": "^1.11.0",
     "next": "15.5.2",
+    "nodemailer": "^7.0.6",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

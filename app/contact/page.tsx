@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import axios from 'axios';
 import {
   IconMail,
   IconPhone,
@@ -39,6 +40,10 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [emailStatus, setEmailStatus] = useState<
+    'idle' | 'processing' | 'success' | 'error'
+  >('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -55,25 +60,64 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setEmailStatus('processing');
+    setErrorMessage('');
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    setIsSubmitting(false);
+    // Show instant success feedback
     setIsSubmitted(true);
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        message: '',
+    // Reset form immediately for better UX
+    const currentFormData = { ...formData };
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      service: '',
+      message: '',
+    });
+
+    // Process email in background
+    try {
+      const response = await axios.post('/api/send-email', currentFormData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        timeout: 30000, // 30 second timeout
       });
-    }, 3000);
+
+      if (response.status === 200) {
+        setEmailStatus('success');
+        // Reset success state after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setEmailStatus('idle');
+        }, 5000);
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setEmailStatus('error');
+
+      let errorMsg = 'Failed to send message. Please try again.';
+      if (axios.isAxiosError(error)) {
+        if (error.response) {
+          errorMsg = error.response.data.error || 'Server error occurred';
+        } else if (error.request) {
+          errorMsg = 'No response from server. Please check your connection.';
+        }
+      }
+
+      setErrorMessage(errorMsg);
+
+      // Show error for 5 seconds, then reset
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setEmailStatus('idle');
+        setErrorMessage('');
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -105,15 +149,58 @@ export default function ContactPage() {
 
               {isSubmitted ? (
                 <div className='text-center py-8 sm:py-12'>
-                  <div className='w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
-                    <IconCheck className='w-6 h-6 sm:w-8 sm:h-8 text-white' />
-                  </div>
-                  <h4 className='text-lg sm:text-xl font-semibold mb-2'>
-                    Message Sent!
-                  </h4>
-                  <p className='text-gray-300 text-sm sm:text-base'>
-                    Thank you for reaching out. We&apos;ll get back to you soon.
-                  </p>
+                  {emailStatus === 'error' ? (
+                    <>
+                      <div className='w-12 h-12 sm:w-16 sm:h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
+                        <svg
+                          className='w-6 h-6 sm:w-8 sm:h-8 text-white'
+                          fill='none'
+                          stroke='currentColor'
+                          viewBox='0 0 24 24'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth={2}
+                            d='M6 18L18 6M6 6l12 12'
+                          />
+                        </svg>
+                      </div>
+                      <h4 className='text-lg sm:text-xl font-semibold mb-2 text-red-400'>
+                        Message Failed to Send
+                      </h4>
+                      <p className='text-gray-300 text-sm sm:text-base mb-4'>
+                        {errorMessage}
+                      </p>
+                      <p className='text-gray-400 text-xs sm:text-sm'>
+                        Please try again or contact us directly.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <div className='w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
+                        <IconCheck className='w-6 h-6 sm:w-8 sm:h-8 text-white' />
+                      </div>
+                      <h4 className='text-lg sm:text-xl font-semibold mb-2'>
+                        Message Sent!
+                      </h4>
+                      <p className='text-gray-300 text-sm sm:text-base mb-2'>
+                        Thank you for reaching out. We&apos;ll get back to you
+                        soon.
+                      </p>
+                      {emailStatus === 'processing' && (
+                        <div className='flex items-center justify-center space-x-2 text-orange-400 text-xs sm:text-sm'>
+                          <div className='w-3 h-3 border border-orange-400 border-t-transparent rounded-full animate-spin'></div>
+                          <span>Sending email notification...</span>
+                        </div>
+                      )}
+                      {emailStatus === 'success' && (
+                        <p className='text-green-400 text-xs sm:text-sm'>
+                          ✓ Email notification sent successfully
+                        </p>
+                      )}
+                    </>
+                  )}
                 </div>
               ) : (
                 <form
@@ -263,7 +350,7 @@ export default function ContactPage() {
                     {isSubmitting ? (
                       <>
                         <div className='w-4 h-4 sm:w-5 sm:h-5 border-2 border-white border-t-transparent rounded-full animate-spin'></div>
-                        <span>Sending...</span>
+                        <span>Processing...</span>
                       </>
                     ) : (
                       <>

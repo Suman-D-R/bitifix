@@ -145,6 +145,54 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Infrastructure Setup Service */}
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20'>
+            <div className='order-2 lg:order-1'>
+              <div className='w-full h-[200px] md:h-[400px] rounded-lg overflow-hidden'>
+                <Rive src='/rive/server.riv' stateMachines='State Machine 1' />
+              </div>
+            </div>
+            <div className='order-1 lg:order-2 flex flex-col justify-center'>
+              <h3 className='text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6'>
+                Cloud and Infrastructure Services
+              </h3>
+              <p className='text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed'>
+                We provide comprehensive infrastructure solutions that power
+                your applications with cutting-edge technologies including AI
+                agents, streaming capabilities, and real-time monitoring
+                systems.
+              </p>
+              <ul className='list-disc list-inside text-gray-300 mb-6 sm:mb-8 space-y-1 sm:space-y-2 text-sm sm:text-base'>
+                <li>
+                  LLM AI Agent Integration – Deploy and manage intelligent AI
+                  agents for enhanced user experiences
+                </li>
+                <li>
+                  Video & Live Streaming Infrastructure – Scalable streaming
+                  solutions for real-time content delivery
+                </li>
+                <li>
+                  Monitoring Dashboards – Real-time analytics and performance
+                  tracking systems
+                </li>
+                <li>
+                  Cloud Infrastructure Setup – Secure, scalable cloud
+                  environments optimized for your needs
+                </li>
+                <li>
+                  DevOps & Automation – Streamlined deployment and maintenance
+                  processes
+                </li>
+              </ul>
+              <a
+                href='/services#infrastructure'
+                className='bg-orange-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-colors hover:bg-orange-600 w-fit inline-block'
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

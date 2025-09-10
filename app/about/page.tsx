@@ -287,6 +287,23 @@ export default function About() {
                 exceptional digital experiences.
               </p>
             </div>
+
+            {/* Team Member 4 */}
+            <div className='text-center p-4 sm:p-6 rounded-xl   transition-all duration-300'>
+              <div className='w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4'>
+                <span className='text-white font-bold text-xl sm:text-2xl'>
+                  A
+                </span>
+              </div>
+              <h3 className='text-lg sm:text-xl font-bold mb-2'>Akash</h3>
+              <p className='text-orange-500 mb-2 sm:mb-3 text-sm sm:text-base'>
+                DevOps Engineer
+              </p>
+              <p className='text-gray-300 text-xs sm:text-sm'>
+                Infrastructure specialist ensuring seamless deployment and
+                reliable system operations for all our projects.
+              </p>
+            </div>
           </div>
         </div>
       </section>
