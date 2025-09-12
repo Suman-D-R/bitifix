@@ -5,6 +5,27 @@
   --foreground: #171717;
 }
 
+@theme {
+  --font-family-sans: var(--font-ubuntu), ui-sans-serif, system-ui, sans-serif;
+  --font-family-serif: var(--font-rubik), ui-serif, Georgia, serif;
+}
+
+/* Apply Ubuntu font to body and all elements */
+body {
+  font-family: var(--font-ubuntu), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+}
+
+/* Ensure all text elements use Ubuntu */
+* {
+  font-family: inherit;
+}
+
+/* Force Ubuntu on all text elements */
+h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, label {
+  font-family: var(--font-ubuntu), ui-sans-serif, system-ui, sans-serif;
+}
+
 body{
   background-color: #111;
 }

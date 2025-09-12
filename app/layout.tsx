@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Rubik, Ubuntu } from 'next/font/google';
 import './globals.css';
 import { AppProvider } from './context/AppContext';
 import Header from './components/Header';
@@ -7,14 +7,15 @@ import Footer from './components/Footer';
 import AOSInit from './components/AOSInit';
 import GoogleAnalytics from './components/GoogleAnalytics';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const rubik = Rubik({
+  variable: '--font-rubik',
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const ubuntu = Ubuntu({
+  variable: '--font-ubuntu',
   subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -190,9 +191,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
-      >
+      <body className={`${rubik.variable} ${ubuntu.variable} antialiased `}>
         <GoogleAnalytics />
         <AOSInit />
         <AppProvider>

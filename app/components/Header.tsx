@@ -88,7 +88,7 @@ export default function Header(): React.ReactElement {
 
             <button
               onClick={() => router.push('/contact')}
-              className='bg-white text-black px-4 py-2 rounded-full hidden md:block'
+              className='bg-white text-black px-4 py-2 rounded-full hidden md:block font-medium'
             >
               Let&apos;s Talk
             </button>
