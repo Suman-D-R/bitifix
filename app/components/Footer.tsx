@@ -103,15 +103,6 @@ export default function Footer(): React.ReactElement {
                     info@bitifix.com
                   </a>
                 </div>
-                <div className='flex items-center gap-3 text-gray-300 text-sm sm:text-base'>
-                  <IconPhone className='w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0' />
-                  <a
-                    href='tel:+1234567890'
-                    className='hover:text-orange-500 transition-colors'
-                  >
-                    +91 9902696211
-                  </a>
-                </div>
                 <div className='flex items-start gap-3 text-gray-300 text-sm sm:text-base'>
                   <IconMapPin className='w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0 mt-0.5' />
                   <span>
