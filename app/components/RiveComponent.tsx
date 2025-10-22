@@ -5,6 +5,7 @@ function RiveComponent({ src }: { src: string }) {
     src: `/rive/${src}.riv`,
     stateMachines: 'State Machine 1',
     isTouchScrollEnabled: true,
+    autoplay: true,
   });
   return <RiveComponent />;
 }
